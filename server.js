@@ -1,9 +1,7 @@
 /** Server startup for BizTime. */
-
-
 const app = require("./app");
+const {PORT} = require("./config");
 
-
-app.listen(3000, function () {
-  console.log("Listening on 3000");
+app.listen(PORT, function () {
+  console.log(`Started on http://localhost:${PORT}`);
 });
